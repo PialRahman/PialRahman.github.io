@@ -6,49 +6,80 @@
 <style type="text/css">
 	#Webpagemenu{
 		background-color:black;
-		width:1000px;
-		height:28px ; 
+		width:800px;
+		height:28px; 
 	}
-	#Webpagemenu ui{}
-	#Webpagemenu ui li{
+	#Webpagemenu ul{}
+	#Webpagemenu ul li{
 		list-style-type:none;
 		float:left; 
 		font-size:25px;
 	}
-	#Webpagemenu ui li a{
-		text-decoration:none;
-		margin-right:18px;
-		color:#f5f2d0;
+
+	#Webpagemenu ul li ul li{
+		background-color:black;
+		width:378px;
+		height:50px ; 
+		font-size:25px;
+		margin-left:-15px;
+		display:none;
 	}
-	#Webpagemenu ui li a:hover{
+		#Webpagemenu ul li ul li a{
+		background-color:black;
+		width:378px;
+		height:50px ; 
+		font-size:25px;
+		margin-left:-15px;
+		display:block;
+	}
+	#Webpagemenu ul li:hover ul li{
+		background-color:black;
+		width:362px;
+		height:50px ; 
+		font-size:25px;
+		margin-left:-41px;
+		display:block;
+	}
+	
+	#Webpagemenu ul li a{
+		text-decoration:none;
+		margin-left:20px;
+		color:#f5f2d0;
+		display:block;
+	}
+
+	#Webpagemenu ul li a:hover{
 		background-color:#22CC00;
 	} 
     #Paintwork{
     	background-color:#DD33FF ;
     	width:340px;
 		height:300px ;
+		float:left;
     }
-    #Paintwork ui{}
-    #Paintwork ui li{
+    #Paintwork ul{}
+    #Paintwork ul li{
     	list-style-type:none;
     }
-     #Paintwork ui li a{
+     #Paintwork ul li a{
     	text-decoration:none;
     }
     #Sketchwork{
 
     	background-color:#ffff;
     	width:340px;
-		height:300px ;
-        margin-top:10px;
+		height:300px;
+		margin-bottom:50px;
+		margin-left:30px;
+        float:left;
 
     }
-    #Sketchwork ui li{
+    #Sketchwork ul li{
             list-style-type:none;
 
 
     }
-    #Sketchwork ui li a{
+    #Sketchwork ul li a{
        text-decoration:none ;
        
     }
@@ -56,18 +87,29 @@
 
     	background-color:#7CFC00;
     	width:340px;
-		height:300px ;
-        margin-top:10px;
+		height:300px;
+		margin-bottom:50px;
+		margin-left:30px;
+        float:left;
     }
-    #TDwork ui{}
-    #TDwork ui li{
+    #TDwork ul{}
+    #TDwork ul li{
 
     	list-style-type:none;
     }
-    #TDwork ui li a{
+    #TDwork ul li a{
 
        text-decoration:none ;
     }
+    #menubers1{
+    	margin-left:-59px;
+    }
+#front ul li{
+	list-style-type:none;
+	float:left;
+	margin-left:50px; 
+}
+
 	</style>
 <body bgcolor="#C2F7FF">
 	<form action="" method="POST">
@@ -76,23 +118,37 @@
 	
 	 <center><h1>Md. Zimmatur Rahman</h1></center></div>
 	 <center><img src="WebProfile.jpg" alt="Pial Rahman Profile picture" width="280" height="300"></center>
-	 <br><br><br><br>
-	
+	 <br><br>
+<div id="front">
+	 <ul>
+	 <li><a align="left" href="https://www.facebook.com/pial.rahman.16?ref=bookmarks" target=""><img src="facebookicon.png" alt="Facebook Logo" width="75" height="70"></a></li>
+		       <li><a align="left" href="https://github.com/PialRahman" target=""><img src="githubicon.png" alt="Github Logo" width="75" height="70"></a></li>
+		<li><a align="left" href="https://www.instagram.com/pial596" target=""><img src="instagramicon.jpeg" alt="Facebook Logo" width="75" height="70"></a></li>
+		<li><a align="left" href="https://accounts.google.com" target=""><img src="Gmailicon.png" alt="Gmail Logo" width="75" height="70"></a><br></li>
+	</ul>
+</div>
+ <br><br><br><br><br><br>
 	 <div id="Webpagemenu">
-	 	<ui>
-
-	<li><a href="index.html">Home</a>
-		<li><a href="index.html">About</a>
+	 	<ul>
+<div id="menubers1">
+	<li><a href="https://pialrahman.github.io">Home</a>
+	</div>
+		<li><a href="informationpage.html">About</a>
 			<li><a href="index.html">Contact</a>
+				<ul>
+					<li><a href="#">Phone: +8801627426317</a></li><br>
+					<li><a href="#">Email:pialrahman56@gmail.com</a></li>
+				</ul>
 				<li><a href="index.html">Order</a>
+						<ul>
+					<li><a href="#">By Phone: +8801627426317</a></li><br>
+					<li><a href="https://www.facebook.com/%E0%A6%B0%E0%A6%82%E0%A6%A4%E0%A7%81%E0%A6%B2%E0%A6%BF-307799359614175/">Facebook: Rongtuli</a></li>
+				</ul>
+
 					<li><a href="https://www.facebook.com/%E0%A6%B0%E0%A6%82%E0%A6%A4%E0%A7%81%E0%A6%B2%E0%A6%BF-307799359614175/">Facebook Page</a>
-		<li><a align="left" href="https://www.facebook.com/pial.rahman.16?ref=bookmarks" target=""><img src="facebookicon.png" alt="Facebook Logo" width="75" height="28"></a></li>
-		       <li><a align="left" href="https://github.com/PialRahman" target=""><img src="githubicon.png" alt="Github Logo" width="75" height="28"></a></li>
-		<li><a align="left" href="https://www.instagram.com/pial596" target=""><img src="instagramicon.jpeg" alt="Facebook Logo" width="75" height="30"></a></li>
-		<li><a align="left" href="https://accounts.google.com" target=""><img src="Gmailicon.png" alt="Gmail Logo" width="75" height="29"></a><br></li>
-	</ui>
+	</ul>
 		</div>
-		<br><br>
+		<br><br><br><br><br>
 		<div style="background-color:#8DE8F6">
 		
 	 <h2>Hello World</h2>
@@ -118,20 +174,21 @@
 <h2>You can visit My Artworks:</h2>
 <ul>
 	<div id="Paintwork">
-		<ui>
-		<li><a href="Paintings.html" target=""><img src="PGALLERYICON.png" alt="pic1" height="198" width="200">Paintings Gallery</a></li>
-	</ui></div>
+		<ul>
+		<li><a href="Paintings.html" target=""><img src="PGALLERYICON.png" alt="pic1" height="198" width="185">Paintings Gallery</a></li>
+	</uL></div>
 	<div id="Sketchwork">
-		<ui>
-		<li><a href="SKETCHES.html" target=""><img src="SGALLERYICON.jpg" alt="pic2" height="198" width="200">Sketches Gallery</a></li></a>
-	</ui>
+		<ul>
+		<li><a href="SKETCHES.html" target=""><img src="SGALLERYICON.jpg" alt="pic2" height="198" width="185">Sketches Gallery</a></li></a>
+	</ul>
 		</div>
 <div id="TDwork">
-	<ui>
-		</li>
-			<li><a href="3DARTS.html" target=""><img src="3DGALLERY.png" height="198" width="200">3D arts Gallery</a>
+	<ul>
+			<li><a href="3DARTS.html" target=""><img src="3DGALLERY.png" height="198" width="187">3D arts Gallery</a>
 			</li>
-		</ui></div>
+		</ul>
+	</ul>
+	</div>
 </form>
 
 </body>
