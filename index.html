@@ -1,234 +1,499 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>pial rahman|pialrahman.github.io</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My webpage</title>
+    <link rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style type="text/css">
-	#Webpagemenu{
-		background-color:black;
-		width:800px;
-		height:28px; 
-	}
-	#Webpagemenu ul{}
-	#Webpagemenu ul li{
-		list-style-type:none;
-		float:left; 
-		font-size:25px;
-	}
-
-	#Webpagemenu ul li ul li{
-		background-color:black;
-		width:378px;
-		height:50px ; 
-		font-size:25px;
-		margin-left:-15px;
-		display:none;
-	}
-		#Webpagemenu ul li ul li a{
-		background-color:black;
-		width:378px;
-		height:50px ; 
-		font-size:25px;
-		margin-left:-15px;
-		display:block;
-	}
-	#Webpagemenu ul li:hover ul li{
-		background-color:black;
-		width:362px;
-		height:50px ; 
-		font-size:25px;
-		margin-left:-41px;
-		display:block;
-	}
-	
-	#Webpagemenu ul li a{
-		text-decoration:none;
-		margin-left:20px;
-		color:#f5f2d0;
-		display:block;
-	}
-
-	#Webpagemenu ul li a:hover{
-		background-color:#22CC00;
-	} 
-    #Paintwork{
-    	background-color:#DD33FF ;
-    	width:340px;
-		height:300px ;
-		float:left;
+    *{
+        margin:0px;
+        padding:0px;
+        box-sizing:border-box;
     }
-    #Paintwork ul{}
-    #Paintwork ul li{
-    	list-style-type:none;
+    @media(max-width:1360px){
+        .row{
+            width:150%;
+        }
+        
+        .columnr2 .td{
+            width:40%;
+        }
+        
     }
-     #Paintwork ul li a{
-    	text-decoration:none;
-    }
-    #Sketchwork{
-
-    	background-color:#ffff;
-    	width:340px;
-		height:300px;
-		margin-bottom:50px;
-		margin-left:30px;
-        float:left;
-
-    }
-    #Sketchwork ul li{
-            list-style-type:none;
-
-
-    }
-    #Sketchwork ul li a{
-       text-decoration:none ;
+    @media (max-width:1100px){
+        .row{
+            float:left;
+            display:flex;
+            flex-direction:column;
+           width:260%;
+           height:20%;
+           
+        }
+      
+        .wr{
+            float:left;
+            display:flex;
+            flex-direction:column;
+           width:260%;
+           height:20%;
+        }
+        .columnr2 .td{
+            width:30%;
+        }
        
     }
-    #TDwork{
+    .ft{
+            width:100%;
+            display:flex;
+            flex-direction:column;
+        }
+    @media (max-width:600px){
+        .row{
+            float:left;
+            display:flex;
+            flex-direction:column;
+           width:300%;
+            
+        }
+        .sb .icn .fa-bars{
+            display:visible;
+            background-color:transparent;
+            color:white;
+            margin-left:10px;
+        
+           
+            
+           
+        }
+        .navbar{
+            display:block;
+            background-color:white;
+        }
+        
+        .dwe .wr{
+            float:left;
+            display:flex;
+            
+          width:90%;
+          height:100px;
+        } 
+        .ft{
+            width:100%;
+            display:flex;
+            
+        }
+        .ft .sl{
+            
+           float:left;
+           color:white;
+        }
+      .ft .sc{
+       float:left;
+       color:white;
+        }
+     .ft .sr{
+   color:white;
+   float:right;
+   }
+   .fa{
+    margin-left:200px;
+    background-color: grey;
+    color:white;
+   }
+   .navbar .fa-search{
+    margin-left:740px;
+    background-color:blue;
+    height:30%;
+ 
+   }
+.navbar .h2{
+    font-size:200px;
 
-    	background-color:#7CFC00;
-    	width:340px;
-		height:300px;
-		margin-bottom:50px;
-		margin-left:30px;
-        float:left;
-    }
-    #TDwork ul{}
-    #TDwork ul li{
-
-    	list-style-type:none;
-    }
-    #TDwork ul li a{
-
-       text-decoration:none ;
-    }
-    #menubers1{
-    	margin-left:-59px;
-    }
-#front ul li{
-	list-style-type:none;
-	float:left;
-	margin-left:50px; 
+   }
+     .fa-facebook{
+          background-color:#3B5998;
+          padding:10px;
+     }
+     .fa-instagram{
+          background-color:rgb(179, 34, 58)
+     }
+     .fa-github{
+        background-color: black;
+     }
+     .fa-google{
+        background-color:#dd4a10;
+     }
+   .fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius:200px;
 }
-#information3{
+
+       
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.navbar .fa-search{
+  
+     margin-right:200px;
+     width:40px;
+        
+      }
+ 
+        .columnr2 .td{
+            width:40%;
+            float:left;
+            text-align:left;
+            margin-left:20px;
+            font-size:14px;
+        }
+        .logops a{
+            width:100%;
+        }
+        #lt{
+            display:none;
+            flex-direction:column;
+            width:300%;
+            justify-content: flex-end;
+        }
+        .logops a{
+            width:300%;
+        }
+        .fa-fa-bars{
+            width:30%;
+            display:visible;
+            color:white;
+            
+        }
+        .columnr2 .h2{
+            font-size:10px;
+        }
+        .imgcl{
+            width:320px;
+            height:320px;
+            margin-top:60px;
+            float:right;
+            margin-right:10px;
+            margin-bottom:200px;
+       
+        }
+        
+    }
+    body{
+        background-color:rgb(223, 247, 253);
+    }
+    .navbar .fa-search{
+    margin-left:-3px;
     margin-top:-20px;
-    margin-right:462px;
+    background-color:rgb(2, 2, 15);
+    height:37px;
+    padding:4px;
+   }
+     .fa-facebook{
+          background-color:#3B5998;
+          padding:10px;
+     }
+     .fa-instagram{
+          background-color:rgb(199, 27, 56)
+     }
+     .fa-github{
+        background-color: black;
+     }
+     .fa-google{
+        background-color:#dd4a10;
+     }
+   .fa {
+    color:white;
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius:200px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+    .navbar{
+        background-color:#4ca7e4;
+        display:flex;
+        justify-content: flex-end;
+        padding-bottom:-50px;
+
+        
+    
+    }
+    .navbar li{
+        list-style-type:none;
+        padding:10px;
+    }
+    .navbar a{
+        text-decoration:none;
+       
+        color:white;
+    }
+
+    
+    .navbar h2{
+        justify-content: flex-start;
+    }
+    .navbar h2 a{
+        float:left;
+        color:white;
+        
+    }
+    .columnr2 h2{
+        font-size:35px;
+        font-family:colus;
+
+    
+    }
+    .columnr2{
+        width:50%;
+        padding-left:5px;
+        float:left;
+        
+        
+       
+    }
+    .row .nr{
+        
+        width:30%;
+        float:left;
+        text-align:center;
+        margin:20px;
+       background-color: rgba(50, 173, 230, 0.26);
+        border-radius:4px;
+        padding:30px;
+        padding-bottom:120px;
+        font-family:;
+        box-shadow:6px 6px 5px rgba(187, 207, 245, 0.4);
+        
+    }
+    .wr{
+        width:30%;
+        float:left;
+        text-align:center;
+        margin:20px;
+       background-color: rgb(253, 253, 255);
+        border-radius:4px;
+        padding:30px;
+        padding-bottom:360px;
+        font-family: times new roman;
+        box-shadow:2px 2px 5px rgb(177, 177, 184,0.4);
+    }
+   .sl{
+    float:left;
+    color:white;
+   }
+   .sc{
+    text-align:center;
+    color:white;
+   }
+   .sr{
+    float:right;
+    color:white;
+   }
+    .td{
+        color:black;
+        position:absolute;
+        margin-left:90px;
+        margin-top:100px;
+        font-family:;
+        padding:10px;
+        width:30%;
+        padding-bottom:140px;
+        font-size:18px;
+       
+    }
+    .fa.fa-search{
+        margin-top:-4px;
+    }
+.newrow{
+      width:20%;
+      display:flex;
+      float:left;
+      margin-top:670px;
+      margin-right:320px;
+      text-align:center;
+      margin-left:-380px;
+      
+
+     
+}
+.butndsns{
+    color:white;
+    background-color:#1118cc;
+    padding:10px;
+    border-radius:90px;
+    border: none;
+    margin-top:10px;
+    font-size:20px;
+}
+.butndsns:hover{
+    background-color:#383cb3;
+}
+.fa.fa-bars{
+    float:center;
+    margin-left:-40px;
    
-   float: right;
 }
-#wrdmtch ul li{
-	list-style-type:none;
+.logops a{
+    float:left;
+    text-decoration: none;
+    color:white;
+    background-color: #4ca7e4;
+    padding:6px;
+    
 }
-#wrdmtch ul li a{
-	text-decoration:none;
-	
-	margin-right:-225px;
-	margin-top:-22px;
-	float: right;
-	background-color:blue;
-	color:white;
-	width:47px;
-	padding:3px;
+.imgcl{
+   border-radius:300px;
+   margin-left:730px;
+   margin-top:30px;
+
+  
+  
 }
-#fndpics{
-	float:right;
-	margin-top:39px;
-	margin-right:646px ;
+.ft{
+    background-color: rgb(6, 30, 65);
+    padding:30px;
 }
+
+.ftdsns{
+    display:flex;
+    justify-content:flex-start;
+   background-color:red;
+}
+
 </style>
-<body bgcolor="#C2F7FF">
-	<form action="" method="POST">
-		 <div style="background-color:#06A0AB">
-	<a href="http://pialrahman.github.io">pialrahman.github.io</a>
-	
-	 <center><h1>Md. Zimmatur Rahman</h1></center></div>
-	 <center><img src="WebProfile.jpg" alt="Pial Rahman Profile picture" width="280" height="300"></center>
-	 <br><br>
-<div id="front">
-	 <ul>
-	 <li><a align="left" href="https://www.facebook.com/pial.rahman.16?ref=bookmarks" target=""><img src="facebookicon.png" alt="Facebook Logo" width="75" height="70"></a></li>
-		       <li><a align="left" href="https://github.com/PialRahman" target=""><img src="githubicon.png" alt="Github Logo" width="75" height="70"></a></li>
-		<li><a align="left" href="https://www.instagram.com/pial596" target=""><img src="instagramicon.jpeg" alt="Facebook Logo" width="75" height="70"></a></li>
-		<li><a align="left" href="https://accounts.google.com" target=""><img src="Gmailicon.png" alt="Gmail Logo" width="75" height="70"></a><br></li>
-	</ul>
-</div>
-<div id="fndpics">
-	<img src="searchbericonimages.jpg" alt="Search icon" width="27" height="29">
-</div>
-<div id="information3">
-		<input type="text" placeholder="Search">
-		
-	</div>
-	<div id="wrdmtch">
-		<ul>
-		<li><a href="http://pialrahman.github.io">Find</a></li>
-	</ul>
-	</div>
- <br><br><br><br><br><br>
-	 <div id="Webpagemenu">
-	 	<ul>
-<div id="menubers1">
-	<li><a href="https://pialrahman.github.io">Home</a>
-	</div>
-		<li><a href="informationpage.html">About</a>
-			<li><a href="index.html">Contact</a>
-				<ul>
-					<li><a href="#">Phone: +8801627426317</a></li><br>
-					<li><a href="#">Email:pialrahman56@gmail.com</a></li>
-				</ul>
-				<li><a href="index.html">Order</a>
-						<ul>
-					<li><a href="#">By Phone: +8801627426317</a></li><br>
-					<li><a href="https://www.facebook.com/%E0%A6%B0%E0%A6%82%E0%A6%A4%E0%A7%81%E0%A6%B2%E0%A6%BF-307799359614175/">Facebook: Rongtuli</a></li>
-				</ul>
-
-					<li><a href="https://www.facebook.com/%E0%A6%B0%E0%A6%82%E0%A6%A4%E0%A7%81%E0%A6%B2%E0%A6%BF-307799359614175/">Facebook Page</a>
-
-	</ul>
-	
-		</div>
-		
-		<br><br><br><br><br>
-		<div style="background-color:#8DE8F6">
-		
-	 <h2>Hello World</h2>
-	<p><font color="000033">This is Md. Zimmatur Rahman who is studying BSc in CSE from</p>
-	<p><font color="000033"> 
-	<p><font color="000033"> 	
-	AIUB, Bangladesh who has good knowledge about OOP,HTML</font></p>
-	 and also developed project which is web based during graduation.</font></p><br>
-	<hr>
-	<h2>Education:</h2>
-	<ol>
-		<li>SSC<a href="http://www.ctgcs.edu.bd/">(Chattogram Collegiate School)</a></li>
-		<li>HSC<a href="https://www.abdurroufcollege.ac.bd/">(Birshreshtha Munshi Abdur Rouf Public College)</a></li>
-<li>Bsc<a href="https://www.aiub.edu/">(AIUB)</a></li>
+<body>
+  
+    
+        <div class="logops"><h2><a href="">pialrahman.github.io</a></h2></div>
+      <div class="navbar" id="lt"> <li><input type="text" placeholder="What are you looking.." style="padding:0.1px;"></li>
+          <i class="fa fa-search" id="sst" style="background-color:rgb(168, 165, 165); padding:7px;"></i>
+       
+        <li><i class="fa fa-times" onClick="rw()" id="nm" style="display:none"></i></li>
+           <li><a href="#">Home</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Contact</a></li>
+           <li><a href="#">Order</a></li>
+           <li><a  href="#">Facebook Page</a></li> 
+           
+    </div> 
+    <div class="sb">
+        <div class="icn"><i class="fa fa-bars"  onClick="dw(this)"></i></div>
+    </div>
+    
+<!-- <header>
+    <div row> --></div>
+        <div class="columnr2">
+            <div class="td">
+           <h3>This is</h3>
+            <h2 style="color:rgb(52, 130, 231);">Md. Zimmatur Rahman</h2>
+             <p style="font-family:helvetica;">Who has completed BSc in CSE from
+             AIUB, Bangladesh who has good knowledge about OOP,HTML andalso developed project which is web based. Also was Graphics Designer at Crsis Entertainment</p>  <button class="butndsns">Join With me</button>
+        </div>
+        </div>
+       <!-- <div class="columnr2" > -->
+        <img class="imgcl" src="webbannernwwcp.jpg" width="470px" height="470px" alt="webpagebanner">
+       
+       </div>
+       <br><br> <br><br>
+       <hr>
+        <br><br> <br><br>
+<!-- </div>
+</header> -->
+<!-- <footer> -->
+    <div class="row">
+        <h2>Qualifications and Skills</h2>
+    <div class="nr" style="text-align:left; font-family:helvetica;">
+        <center><h2 style="font-size:30px;">Education</h2></center> <br><br>
+        <h4>SSC(Chattogram Collegiate School)</h4><br>
+           <h4>HSC(Birshreshtha Munshi Abdur Rouf Public College)</li><br><br>
+           <h4>BSc(Amercian International University-Bangladesh)</h4>
+<br>
+    </div>
+    <div class="nr" style="text-align:center; font-family:helvetica;">
+        <center><h2 style="font-size:30px;">Skills</h2></center> <br><br> <br>
+        <ol><h4>Web Design</h4><br>
+        <h4>Web Development</h4><br>
+       <h4>Art</h4><br>
+        <h4>Graphics Design</h4>
+     
+    </div>
+ 
+    <div class="nr" style="text-align:center; font-family:helvetica;">
+        <h2 style="text-align:center; font-size:30px;">Business</h2> <br><br><br>
+        <h4>Contract  Paining</h4><br>
+        <h4>Sell art</h4><br>
+        <h4>Sell painting</h4><br>
+        <h4>Sell Drawing</h4>
+        
+   
+</div> </div>
+<br><br><br><br><br><br><br>
 <hr>
-<h2>Business:</h2>
-<ul>
-	<li>Contract Paintings(Sketches,Paintings)</li>
-	<li>Sell Arts(Sketches,Paintings)</li>
-	<hr>
-</ul>
-</div>
-<h2>You can visit My Artworks:</h2>
-<ul>
-	<div id="Paintwork">
-		<ul>
-		<li><a href="Paintings.html" target=""><img src="PGALLERYICON.png" alt="pic1" height="198" width="185">Paintings Gallery</a></li>
-	</uL></div>
-	<div id="Sketchwork">
-		<ul>
-		<li><a href="SKETCHES.html" target=""><img src="SGALLERYICON.jpg" alt="pic2" height="198" width="185">Sketches Gallery</a></li></a>
-	</ul>
-		</div>
-<div id="TDwork">
-	<ul>
-			<li><a href="3DARTS.html" target=""><img src="3DGALLERY.png" height="198" width="187">3D arts Gallery</a>
-			</li>
-		</ul>
-	</ul>
-	</div>
-</form>
 
+
+<div class="dwe">
+  
+    <h2>Art Works You Can See</h2>
+    <div class="wr">
+        <h2>Painting</h2>
+    </div>
+    <div class="wr">
+        <h2>Sketch</h2>
+    </div>
+<div class="wr">
+    <h2>3D ART</h2>
+</div>
+<div class="">
+<p style="color:rgb(223, 247, 253);">slider</p>
+</div>
+</div>
+<div class="ft">
+    <div class="sl">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-github"></a>
+        <a href="" class="fa fa-google"></a>
+       
+    </div>
+    <div class="sc">
+        <p >&copy;All right reserverd by website owner</p>
+    </div>
+    <div class="sr">
+        <h3><i class="fa fa-map-marker"></i> Address:Dhaka</h3>
+        
+    </div>
+</div>
+<!-- </footer> -->
+<script>
+  
+     
+   function dw(){
+    document.getElementById("lt").style.height="400px";
+    document.getElementById("lt").style.display="block";
+    document.getElementById("nm").style.display="block";
+   }
+ function rw(){
+    document.getElementById("lt").style.display="none";
+ }
+</script>
 </body>
 </html>
