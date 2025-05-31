@@ -405,11 +405,7 @@ color: white;
  .main-container{
    display: block;
  }
- .footer-section{
-   display: flex;
-   top:300px;
-   flex-direction: column;
-}
+ 
  
 }
 
@@ -552,10 +548,7 @@ color: white;
    overflow: hidden;
    z-index: 0;
 }
-.footer-section{
-   display: flex;
-   flex-direction: row;
-}
+
 
  
 }
