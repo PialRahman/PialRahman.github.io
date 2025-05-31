@@ -409,6 +409,9 @@ color: white;
    display: flex;
    flex-direction: column;
  }
+ #footer-section-2-header{
+   text-align: center;
+ }
 }
 
 /* tablet device */
@@ -549,8 +552,16 @@ color: white;
    position: relative;
    overflow: hidden;
    z-index: 0;
-   
-   
-
 }
+.footer-section{
+   display: flex;
+   flex-direction: row;
+}
+.footer-section{
+   display: flex;
+   flex-direction: row;
+ }
+ #footer-section-2-header{
+   text-align: left;
+ }
 }
