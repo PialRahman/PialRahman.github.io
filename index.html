@@ -1,556 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My webpage</title>
-    <link rel="stylesheet" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pialrahman</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
-<style type="text/css">
-    *{
-        margin:0px;
-        padding:0px;
-        box-sizing:border-box;
-    }
-    @media(max-width:1360px){
-        .row{
-            width:150%;
-        }
-        
-        .columnr2 .td{
-            width:40%;
-        }
-        
-    }
-    @media (max-width:1100px){
-        .row{
-            float:left;
-            display:flex;
-            flex-direction:column;
-           width:260%;
-           height:20%; 
-           
-        }
-      
-        .wr{
-            float:left;
-            display:flex;
-            flex-direction:column;
-           width:260%;
-           height:20%;
-        }
-        .columnr2 .td{
-            width:30%;
-        }
-       
-    }
-    .ft{
-            width:100%;
-            display:flex;
-            flex-direction:column;
-        }
-    @media (max-width:600px){
-        .row{
-            float:left;
-            display:flex;
-            flex-direction:column;
-           width:300%;
-            
-        }
-        .sb .icn .fa-bars{
-            display:visible;
-            background-color:transparent;
-            color:black;
-            margin-left:10px;
-        
-           
-            
-           
-        }
-        .columnr2 .td .ltrfn{
-            font-size: 19px;
-        }
-        .navbar{
-            display:block;
-            background-color:white;
-        }
-        .navbar li:hover{
-            background-color: rgb(20, 20, 126);
-        }
-        
-        .dwe .wr{
-            float:left;
-            display:flex;
-            
-          width:90%;
-          height:100px;
-        } 
-        .ft{
-            width:100%;
-            display:flex;
-            
-        }
-        .ft .sl{
-            
-           float:left;
-           color:white;
-        }
-      .ft .sc{
-       float:left;
-       color:white;
-        }
-     .ft .sr{
-   color:white;
-   float:right;
-   }
-   .fa{
-    margin-left:200px;
-    background-color: grey;
-    color:white;
-   }
-   .navbar .fa-search{
-    margin-left:740px;
-    background-color:blue;
-    height:30%;
- 
-   }
-.navbar .h2{
-    font-size:200px;
 
-   }
-     .fa-facebook{
-          background-color:#3B5998;
-          padding:10px;
-     }
-     .fa-instagram{
-          background-color:rgb(240, 48, 108)
-     }
-     .fa-github{
-        background-color: black;
-     }
-     .fa-google{
-        background-color:#dd4a10;
-     }
-   .fa {
-  padding: 10px;
-  font-size: 20px;
-  width: 40px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius:200px;
-}
-
-       
-
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.navbar .fa-search{
-  
-     margin-right:200px;
-     width:40px;
-        
-      }
-      .columnr2{
-        display:flex;
-        flex-direction:column;
-      }
-      .butndsns{
-        transform:scale(0.8);
-        margin-left:-10px;
-      }
- 
-        .columnr2 .td{
-            width:40%;
-            float:left;
-            text-align:left;
-            margin-left:20px;
-            font-size:14px;
-        }
-        .logops a{
-            width:100%;
-        }
-        #lt{
-            display:none;
-            flex-direction:column;
-            width:300%;
-            justify-content: flex-end;
-        }
-        .logops a{
-            width:300%;
-        }
-        .fa-fa-bars{
-            width:30%;
-            display:visible;
-            color:white;
-            
-        }
-        .columnr2 .td{
-            font-size:9px;
-            margin-left:-2px;
-        }
-        .imgcl{
-            width:220px;
-            height:220px;
-            margin-top:60px;
-            float:right;
-            margin-right:10px;
-            margin-bottom:200px;
-       
-        }
-        
-    }
-    body{
-        background-color:rgb(223, 247, 253);
-    }
-    .navbar .fa-search{
-    margin-left:-3px;
-    margin-top:-20px;
-    background-color:rgb(2, 2, 15);
-    height:37px;
-    padding:4px;
-   }
-     .fa-facebook{
-          background-color:#3B5998;
-          padding:10px;
-     }
-     .fa-instagram{
-          background-color:rgb(240, 48, 108)
-     }
-     .fa-github{
-        background-color: black;
-     }
-     .fa-google{
-        background-color:#dd4a10;
-     }
-   .fa {
-    color:white;
-  padding: 10px;
-  font-size: 20px;
-  width: 40px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius:200px;
-}
-
-
-
-    .navbar{
-        background-color:#4ca7e4;
-        display:flex;
-        justify-content: flex-end;
-        padding-bottom:-50px;
-      
-        
-    
-    }
-    .navbar li{
-        list-style-type:none;
-        padding:10px; 
-         
-    }
-    .navbar li:hover{
-        background-color:rgb(18, 18, 112);
-    }
-    .navbar  #idsn:hover{
-      background-color:transparent;
-        
-    }
-    .navbar a{
-        text-decoration:none;
-       
-        color:white;
-    }
-
-    
-    .navbar h2{
-        justify-content: flex-start;
-    }
-    .navbar h2 a{
-        float:left;
-        color:white;
-        
-    }
-    .columnr2 h2{
-        font-size:35px;
-        font-family:colus;
-
-    
-    }
-    .columnr2{
-        width:50%;
-        padding-left:5px;
-        float:left;
-        
-        
-       
-    }
-    .row .nr{
-        
-        width:30%;
-        float:left;
-        text-align:center;
-        margin:20px;
-       background-color: rgba(50, 173, 230, 0.26);
-        border-radius:4px;
-        padding:30px;
-        padding-bottom:120px;
-        font-family:sans-serif;
-        box-shadow:6px 6px 5px rgba(187, 207, 245, 0.4);
-        
-    }
-    .wr{
-        width:30%;
-        float:left;
-        text-align:center;
-        margin:20px;
-       background-color: rgb(253, 253, 255);
-        border-radius:4px;
-        padding:30px;
-        padding-bottom:360px;
-        font-family: times new roman;
-        box-shadow:2px 2px 5px rgb(177, 177, 184,0.4);
-    }
-    .wr:hover{
-transform:scale(1.07);
-    }
-   .sl{
-    float:left;
-    color:white;
-   }
-   .sc{
-    text-align:center;
-    color:white;
-   }
-   .sr{
-    float:right;
-    color:white;
-   }
-    .td{
-        color:black;
-        position:absolute;
-        margin-left:90px;
-        margin-top:100px;
-        font-family:sans-serif;
-        padding:10px;
-        width:30%;
-        padding-bottom:140px;
-        font-size:18px; 
-       
-    }
-    .fa.fa-search{
-        margin-top:-4px;
-    }
-.newrow{
-      width:20%;
-      display:flex;
-      float:left;
-      margin-top:670px;
-      margin-right:320px;
-      text-align:center;
-      margin-left:-380px;
-      
-
-     
-}
-.butndsns{
-    color:white;
-    background-color:#1118cc;
-    padding:10px;
-    border-radius:90px;
-    border: none;
-    margin-top:10px;
-    font-size:20px;
-}
-.butndsns:hover{
-    background-color:#21246d;
-}
-.fa.fa-bars{
-    float:center;
-    margin-left:-40px;
-   
-}
-.logops a{
-    float:left;
-    text-decoration: none;
-    color:white;
-    background-color: #4ca7e4;
-    padding:6px;
-    
-}
-.imgcl{
-   border-radius:300px;
-   margin-left:730px;
-   margin-top:30px;
-
-  
-  
-}
-.ft{
-    background-color: rgb(6, 30, 65);
-    padding:30px;
-}
-
-.ftdsns{
-    display:flex;
-    justify-content:flex-start;
-   background-color:red;
-}
-</style>
 <body>
-  
-    
-        <div class="logops"><h2><a href="">pialrahman.github.io</a></h2></div>
-      <div class="navbar" id="lt"> <li id="idsn"><input  type="text" placeholder="What are you looking.." style="padding:0.1px;"></li>
-          <i class="fa fa-search" id="sst" style="background-color:rgb(168, 165, 165); padding:7px;"></i>
-          <i class="fa fa-times" onClick="rw()" id="nm" style="display:none"></i>
-           <li><a href="#">Home</a></li>
-           <li><a href="informationpage.html">About</a></li>
-        <li><a href="#" >Contact</a></li>
-           <li><a href="#">Order</a></li>
-           <li><a  href="https://www.facebook.com/profile.php?id=100067204871809">Facebook Page</a></li> 
-           
-    </div> 
-    <div class="sb">
-        <div class="icn"><i class="fa fa-bars"  onClick="dw(this)"></i></div>
+  <header>
+    <div class="navbar">
+
+      <ul class="nav-items">
+        <li>
+          <h3><a href="">pialrahman.github.io</a></h3>
+        </li>
+        <li><a href="">HOME</a></li>
+        <li><a href="#banner-text">ABOUT</a></li>
+        <li><a href="#footer-section">CONTACT</a></li>
+        <li><a href="#main-section-3-1">WORKS</a></li>
+      </ul>
+
+      <div class="web-banner-main">
+        <img class="web-banner" src="webbannerimage.png" alt="pialrahman">
+      </div>
+
     </div>
-    
-<!-- <header>
-    <div row> --></div>
-        <div class="columnr2">
-            <div class="td">
-           <h3>This is</h3>
-            <h2 class="ltrfn" style="color:rgb(52, 130, 231);">Md. Zimmatur Rahman</h2>
-             <p style="font-family:helvetica;">Who has completed BSc in CSE from
-             AIUB, Bangladesh who has good knowledge about OOP,HTML andalso developed project which is web based. Also was Graphics Designer at Crsis Entertainment</p>  <form action="https://www.facebook.com/pial.rahman.16"><input class="butndsns" type="submit" value="Join With me"></form>
+    <div class="banner-text" id="banner-text">
+      <h2 class="banner-text1">THIS IS</h2>
+      <h2 class="banner-text2">MD. ZIMATUR</h2>
+      <br>
+      <hr class="banner-text3">
+      <br>
+      <p class="banner-text4">A motivated web developer who has 1.5 years of professional experience as Programmer
+        who worked at Fibre@Home Global Ltd is looking for an opportunity to join as a Web
+        Developer to a company. So now, target is to use the skills I have for the opportunity. To
+        prove my skills by getting an opportunity to work. The plan is to give my best by utilizing
+        my skills to prove myself for that job.</p>
+      <br>
+      <div class="banner-btns">
+        <button class="btn-banner" id="joinBtn">JOIN ME</button>
+      </div>
+    </div>
+  </header>
+  <br>
+  <div class="header-main">
+    <h2>QUALIFICATIONS & SKILLS</h2>
+  </div>
+  <main class="main-container">
+
+    <div class="main-section-1">
+      <div class="info-section">
+        <h2>EDUCATION</h2>
+        <br>
+        <p>SSC(Chattogram Collegiate School)</p>
+        <p>HSC(Birshreshtha Munshi Abdur Rouf Public College)</p>
+        <p>BSc(Amercian International University-Bangladesh)</p>
+      </div>
+      <div class="info-section">
+        <h2>SKILLS</h2>
+        <br>
+        <p>Web Design (Front end design)</p>
+        <p>Web Development (Front & Back end Development)</p>
+        <p>Graphics Design (Adobe Photoshop & Adobe Illustrator)</p>
+      </div>
+      <div class="info-section">
+        <h2>Abilities</h2>
+        <br>
+        <p>Learning new technology (Adaptibily of learning new thing)</p>
+        <p>Problem solving (With thinking differently)</p>
+        <p>Critical thinking (Solving ability of new problem through critical thinking)</p>
+        <p></p>
+      </div>
+    </div>
+    <div class="main-section-2">
+      <div class="client-section">
+        <h1>
+          <div class="num" data-num="20">0</div>
+        </h1>
+        <p>Website Clients</p>
+      </div>
+      <div class="client-section">
+        <h1>
+          <div class="num" data-num="25">0</div>
+        </h1>
+        <p>Graphics clients</p>
+      </div>
+      <div class="client-section">
+        <h1>
+          <div class="num" data-num="45">0</div>
+        </h1>
+        <p>Total Visitors</p>
+      </div>
+      <div class="client-section">
+        <h1>
+          <div class="num" data-num="40">0</div>
+        </h1>
+        <p>Satiesfied Clients</p>
+      </div>
+    </div>
+    <div class="header-main" id="header-main">
+      <h1>MY SERVICES</h1>
+    </div>
+    <div class="main-section-3-1" id="main-section-3-1">
+
+      <div class="info-section-3" id="info-section-3-1">
+        <img src="frond-end-image.jpg" class="card-image">
+        <h2>FRONT END DEVELOPMENT</h2>
+        <br>
+        <p>Crafting responsive and user-friendly web interfaces with modern design.</p>
+        <br>
+        <div class="service-btn-section">
+          <button class="service-btn" id="joinBtn2">VISIT</button>
         </div>
+      </div>
+      <div class="info-section-3" id="info-section-3-2">
+        <img src="back-end-image.jpg" class="card-image">
+        <h2>BACK END DEVELOPMENT</h2>
+        <br>
+        <p>Building efficient server-side applications to power your website.</p>
+        <br>
+        <div class="service-btn-section">
+          <button class="service-btn" id="joinBtn3">VISIT</button>
         </div>
-       <!-- <div class="columnr2" > -->
-        <img class="imgcl" src="webbannernww.jpg" width="470px" height="470px" alt="webpagebanner">
-       
-       </div>
-       <br><br> <br><br>
-       <hr>
-        <br><br> <br><br>
-<!-- </div>
-</header> -->
-<!-- <footer> -->
-    <div class="row">
-        <h2>Qualifications and Skills</h2>
-    <div class="nr" style="text-align:left; font-family:helvetica;">
-        <center><h2 style="font-size:30px;">Education</h2></center> <br><br>
-        <h4>SSC(Chattogram Collegiate School)</h4><br>
-           <h4>HSC(Birshreshtha Munshi Abdur Rouf Public College)</li><br><br>
-           <h4>BSc(Amercian International University-Bangladesh)</h4>
-<br>
+      </div>
+      <div class="info-section-3" id="info-section-3-3">
+        <img src="logo-design-image.jpg" class="card-image">
+        <h2>LOGO DESIGN</h2>
+        <br>
+        <p>Creating unique and memorable logos that capture your brand's identity.</p>
+        <br>
+        <div class="service-btn-section">
+          <button class="service-btn" id="joinBtn4">VISIT</button>
+        </div>
+      </div>
     </div>
-    <div class="nr" style="text-align:center; font-family:helvetica;">
-        <center><h2 style="font-size:30px;">Skills</h2></center> <br><br> <br>
-        <ol><h4>Web Design</h4><br>
-        <h4>Web Development</h4><br>
-       <h4>Art</h4><br>
-        <h4>Graphics Design</h4>
-     
+    <div class="main-section-3-2">
+      <div class="info-section-3" id="info-section-3-4">
+        <img src="pen-image.jpg" class="card-image">
+        <h2>PAINTINGS</h2>
+        <br>
+        <p>Producing original artwork that brings emotion and creativity to any space.</p>
+        <br>
+        <div class="service-btn-section">
+          <button class="service-btn" id="joinBtn5">VISIT</button>
+        </div>
+      </div>
+      <div class="info-section-3" id="info-section-3-5">
+        <img src="sketch-image.jpg" class="card-image">
+        <h2>SKETCHING</h2>
+        <br>
+        <p>Offering detailed hand-drawn sketches for artistic or conceptual purposes.</p>
+        <br>
+        <div class="service-btn-section">
+          <button class="service-btn" id="joinBtn6">VISIT</button>
+        </div>
+      </div>
+      <div class="info-section-3" id="info-section-3-6">
+        <img src="banner-image.jpg" class="card-image">
+        <h2>BANNER DESIGN</h2>
+        <br>
+        <p>Designing eye-catching banners for online and offline promotional needs.</p>
+        <br>
+        <div class="service-btn-section">
+          <button class="service-btn" id="joinBtn8">VISIT</button>
+        </div>
+      </div>
     </div>
- 
-    <div class="nr" style="text-align:center; font-family:helvetica;">
-        <h2 style="text-align:center; font-size:30px;">Business</h2> <br><br><br>
-        <h4>Contract  Paining</h4><br>
-        <h4>Sell art</h4><br>
-        <h4>Sell painting</h4><br>
-        <h4>Sell Drawing</h4>
-        
-   
-</div> </div>
-<br><br><br><br><br><br><br>
-<hr>
+  </main>
+  <footer class="footer-section" id="footer-section">
+    <div class="footer-info-section">
+      <h2>CONTACT WITH ME</h2>
+      <br>
+      <p>
+      <div class="social-icon">
+        <p href="https://facebook.com/" target="_blank"><i class="fas fa-map-marker-alt"></i> DHAKA,BANGLADESH</p>
+      </div>
+      </p>
+      <p>
+      <div class="social-icon">
+        <a href="https://facebook.com/" target="_blank"><i class="fas fa-envelope"></i> pialrahman56@gmail.com</a>
+      </div>
+      </p>
+      <p>
+      <div class="social-icon">
+        <p href="https://facebook.com/" target="_blank"><i class="fas fa-phone-alt"></i> +8801627426317</p>
+      </div>
+      </p>
+    </div>
+    <div class="footer-info-section">
+      <h2>WORKS AND EXPERIENCES</h2>
+      <br>
+      <p>WEB DEVLOPMENT</p>
+      <p>GRAPHICS DESIGN</p>
+      <p>PAINTINGS</p>
+    </div>
+    <div class="footer-info-section">
+      <h2>FOLLOW ME</h2>
+      <br>
+      <div class="footer-social-icon-section">
+        <div class="social-icon">
+          <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <div class="social-icon">
+          <a href="https://facebook.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="social-icon">
+          <a href="https://facebook.com/" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="social-icon">
+          <a href="https://facebook.com/" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+   document.addEventListener('DOMContentLoaded', () => {
+  const ids = [
+    'info-section-3-1',
+    'info-section-3-2',
+    'info-section-3-3',
+    'info-section-3-4',
+    'info-section-3-5',
+    'info-section-3-6'
+  ];
 
+  const elements = ids.map(id => document.getElementById(id)).filter(el => el);
+  const section = document.getElementById('main-section-3-1');
 
-<div class="dwe">
-  
-    <h2>Art Works You Can See</h2>
-    <div class="wr">
-        <a href="Paintings.html"><h2>Paintings</h2>
-        <h2><img src="PGALLERYICON.png" width="200px" height="200px"></h2></a>
-    </div>
-    <div class="wr">
+  let hasAnimated = false;
 
-        <a href="SKETCHES.html">
-        <h2>Sketches</h2>
-        <h2><img src="SGALLERYICON.jpg" width="200px" height="200px"></h2></a>
-    </div>
-<div class="wr">
-    <a href="3DARTS.html"><h2>3D ARTS</h2>
-    <h2><img src="3DGALLERY.png" width="200px" height="200px"></h2></a>
-</div>
-<div class="">
-<p style="color:rgb(223, 247, 253);">slider</p>
-</div>
-</div>
-<div class="ft">
-    <div class="sl">
-        <a href="https://www.facebook.com/pial.rahman.16" class="fa fa-facebook"></a>
-        <a href="https://www.instagram.com/pial596" class="fa fa-instagram"></a>
-        <a href="https://github.com/PialRahman" class="fa fa-github"></a>
-        <a href="" class="fa fa-google"></a>
-       
-    </div>
-    <div class="sc">
-        <p >&copy;All right reserverd by website owner</p>
-    </div>
-    <div class="sr">
-        <h3><i class="fa fa-map-marker"></i> Address:Dhaka</h3>
-        
-    </div>
-</div>
-<!-- </footer> -->
-<!-- Messenger Chat Plugin Code -->
-<div id="fb-root"></div>
+  function animateElements() {
+    if (hasAnimated) return;
+    hasAnimated = true;
 
-<!-- Your Chat Plugin code -->
-<div id="fb-customer-chat" class="fb-customerchat">
-</div>
-
-<script>
-  var chatbox = document.getElementById('fb-customer-chat');
-  chatbox.setAttribute("page_id", "307799359614175");
-  chatbox.setAttribute("attribution", "biz_inbox");
-</script>
-
-<!-- Your SDK code -->
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v18.0'
+    elements.forEach((el, index) => {
+      setTimeout(() => {
+        el.classList.add('visible');
+      }, index * 200); // Staggered animation
     });
-  };
+  }
 
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
+  // Animate immediately if already in view (like on refresh)
+  if (section && section.getBoundingClientRect().top < window.innerHeight) {
+    animateElements();
+  }
+
+  // Animate when scrolled into view
+  if (section) {
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateElements();
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    observer.observe(section);
+  }
+});
+
+
+
+
+  </script>
+
+  <script src="js/infodetailanimation.js"></script>
+
+  <script src="js/counter.js"></script>
+  <script>
+  document.getElementById('joinBtn').addEventListener('click', () => {
+    window.location.href = 'https://www.facebook.com/pial.rahman.16';
+  });
+   document.getElementById('joinBtn2').addEventListener('click', () => {
+    window.location.href = 'https://github.com/pialrahman';
+  });
+ 
+   document.getElementById('joinBtn3').addEventListener('click', () => {
+    window.location.href = 'https://github.com/pialrahman';
+  });
+   document.getElementById('joinBtn4').addEventListener('click', () => {
+    window.location.href = 'https://www.behance.net/pialrahman';
+  });
+   document.getElementById('joinBtn5').addEventListener('click', () => {
+    window.location.href = 'https://pialrahman.github.io/Paintings.html';
+  });
+   document.getElementById('joinBtn6').addEventListener('click', () => {
+    window.location.href = 'https://pialrahman.github.io/SKETCHES.html';
+  });
+   document.getElementById('joinBtn8').addEventListener('click', () => {
+    window.location.href = 'https://www.behance.net/pialrahman';
+  });
 </script>
-<script>
-  
-     
-   function dw(){
-    document.getElementById("lt").style.height="400px";
-    document.getElementById("lt").style.display="block";
-    document.getElementById("nm").style.display="block";
-   }
- function rw(){
-    document.getElementById("lt").style.display="none";
- }
-</script>
+ 
 </body>
+
 </html>
