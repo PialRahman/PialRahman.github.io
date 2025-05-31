@@ -14,8 +14,9 @@
 <body>
   <header>
     <div class="navbar">
-
+<button class="toggle-btn" onclick="toggleMenu()">☰</button>
       <ul class="nav-items">
+       
         <li>
           <h3><a href="">pialrahman.github.io</a></h3>
         </li>
@@ -297,7 +298,14 @@
     window.location.href = 'https://www.behance.net/pialrahman';
   });
 </script>
- 
+ <script>
+  const toggleBtn = document.querySelector('.toggle-btn');
+  const navItems = document.querySelector('.nav-items');
+
+  toggleBtn.addEventListener('click', () => {
+    navItems.classList.toggle('active');
+  });
+</script>
 </body>
 
 </html>
