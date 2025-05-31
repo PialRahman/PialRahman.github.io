@@ -407,6 +407,7 @@ color: white;
  }
  .footer-section{
    display: flex;
+   top:300px;
    flex-direction: column;
 }
  
