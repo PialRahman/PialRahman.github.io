@@ -826,6 +826,9 @@ color: white;
    
    
 }
+  .card-image{
+    object-fit: cover;
+}
 .web-banner{
    display: block;
    width:100%;
@@ -845,3 +848,4 @@ color: white;
    font-size:20px;
 }
 }
+
