@@ -769,6 +769,9 @@ color: white;
     flex-direction: column;
     justify-content: flex-start; /* top spacing */
     align-items: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-wrap: wrap;
   }
   .main-section-3-1 .info-section-3 .card-image {
     width: 100%; /* fill the card */
@@ -849,6 +852,7 @@ color: white;
    font-size:20px;
 }
 }
+
 
 
 
