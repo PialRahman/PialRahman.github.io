@@ -761,25 +761,32 @@ color: white;
 }
 .main-section-3-1 {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;   
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between; /* ensures even spacing */
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
- .info-section-3 {
+
+.info-section-3 {
   background-color: white;
   color: white;
-  margin: 2%;
+  margin: 1%; /* reduced from 2% to prevent overflow */
   font-family: "Poppins", sans-serif;
-  width: 30%;  
+  width: 31%; /* adjusted to fit exactly 3 in a row */
   padding: 2%;
   height: 200px;
   text-wrap: wrap;
+  display: flex; /* make content align inside */
   justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
   z-index: 0;
+  box-sizing: border-box;
 }
+
 .main-section-3-2{
    display: flex;
    flex-direction: row;
@@ -850,5 +857,6 @@ color: white;
    font-size:20px;
 }
 }
+
 
 
