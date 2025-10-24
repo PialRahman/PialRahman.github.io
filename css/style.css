@@ -759,25 +759,25 @@ color: white;
    display: flex;
    flex-direction: row;
 }
-.main-section-3-1{
-   display: flex;
-   flex-direction: row;
-}
- .info-section-3{
-   background-color: white;
-   color: white;
-   margin:2%;
-   font-family: "Poppins", sans-serif;
-   width:100%;
-   padding:2%;
-   height:200px;
-   text-wrap: wrap;
-   justify-content: center;
-   align-items: center;
-   position: relative;
-   overflow: hidden;
-   z-index: 0;
-}
+.main-section-3-1 .info-section-3 {
+    width: 30%; /* keep 3 cards in a row */
+    height: 300px; /* give more height */
+    margin: 2%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* top spacing */
+    align-items: center;
+  }
+  .main-section-3-1 .info-section-3 .card-image {
+    width: 100%; /* fill the card */
+    height: 200px; /* adjust as needed */
+    object-fit: cover;
+    margin-top: 20px; /* spacing from top */
+    position: relative; /* not absolute */
+    z-index: -1; /* keep behind text */
+  }
 
 .main-section-3-2{
    display: flex;
@@ -849,6 +849,7 @@ color: white;
    font-size:20px;
 }
 }
+
 
 
 
