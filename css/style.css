@@ -671,8 +671,6 @@ color: white;
  .nav-items li{
     list-style-type: none;
     margin:5%;
-    
-   
  }
  .banner-text1{
    position: relative;
@@ -710,17 +708,14 @@ color: white;
    padding:19px 0px;
    border: none;
    cursor: pointer;
-   
  }
  .nav-items{
-   
    display: flex;
    flex-direction: row;
 }
 .nav-items li a{
    display: block;
   justify-content: left;
-  
 }
 .header-main{
     position: relative;
@@ -743,7 +738,6 @@ color: white;
    padding-bottom: 10%;
 }
 .info-section{
- 
    margin:2%;
    font-family: "Poppins", sans-serif;
    width:30%;
@@ -770,6 +764,7 @@ color: white;
    color: white;
    margin:2%;
    font-family: "Poppins", sans-serif;
+   width:100%;
    padding:2%;
    height:200px;
    text-wrap: wrap;
@@ -813,22 +808,18 @@ color: white;
    display: flex;
    position: absolute;
    flex-direction: row;
-  
 }
 .social-icon{
    margin-left:20%;
 }
 .toggle-btn {
   display: none; /* hidden by default */
- 
 }
- .web-banner2{
+.web-banner2{
   display:none;
-   
-   
 }
 .card-image{
-   
+    object-fit: cover;
     width:100%;
     inset: 0;   
 }
@@ -837,11 +828,8 @@ color: white;
    width:100%;
    height:700px;
    object-fit: cover;
-   
-   
 }
 .footer-info-section h2{
-   
    font-size:30px;
 }
 .footer-info-section a{
@@ -850,7 +838,37 @@ color: white;
 .social-icon{
    font-size:20px;
 }
+
+/* ===========================
+   FIX: prevent image overflow
+   =========================== */
+  .main-section-3-1 {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: stretch !important;
+  }
+
+  .info-section-3 {
+    width: 30% !important;
+    flex: 0 0 30% !important;
+    overflow: hidden !important;
+    position: relative !important;
+  }
+
+  .card-image {
+    position: absolute !important;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+    z-index: -1 !important;
+  }
 }
+
+
 
 
 
