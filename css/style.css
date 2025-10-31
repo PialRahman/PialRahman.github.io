@@ -851,7 +851,6 @@ color: white;
   }
 
   .info-section-3 {
-    width: 30% !important;
     flex: 0 0 calc(33.33% - 2%) !important;
     overflow: hidden !important;
     position: relative !important;
@@ -867,6 +866,7 @@ color: white;
     z-index: -1 !important;
   }
 }
+
 
 
 
