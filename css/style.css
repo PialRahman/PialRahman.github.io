@@ -830,6 +830,7 @@ color: white;
 .card-image{
    
     width:100%;
+    inset: 0;   
 }
 .web-banner{
    display: block;
@@ -850,5 +851,6 @@ color: white;
    font-size:20px;
 }
 }
+
 
 
