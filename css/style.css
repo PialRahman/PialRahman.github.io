@@ -770,7 +770,6 @@ color: white;
    color: white;
    margin:2%;
    font-family: "Poppins", sans-serif;
-   width:100%;
    padding:2%;
    height:200px;
    text-wrap: wrap;
@@ -851,4 +850,5 @@ color: white;
    font-size:20px;
 }
 }
+
 
