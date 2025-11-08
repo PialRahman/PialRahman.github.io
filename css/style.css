@@ -761,11 +761,11 @@ color: white;
  .info-section-3{
    background-color: white;
    color: white;
-   margin:2%;
+
    font-family: "Poppins", sans-serif;
    width: 3%;
-   padding:2%;
-   height:200px;
+   
+   height:20px;
    text-wrap: wrap;
    justify-content: center;
    align-items: center;
@@ -865,6 +865,7 @@ color: white;
     z-index: -1 !important;
   }
 }
+
 
 
 
