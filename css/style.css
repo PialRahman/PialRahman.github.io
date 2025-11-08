@@ -762,7 +762,7 @@ color: white;
  .info-section-3{
    background-color: white;
    color: white;
-   margin:2%;
+
    font-family: "Poppins", sans-serif;
    width: 30%;
    padding:2%;
@@ -866,6 +866,7 @@ color: white;
     z-index: -1 !important;
   }
 }
+
 
 
 
